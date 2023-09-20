@@ -1,5 +1,5 @@
 #!/bin/bash
-DISK="/dev/xvdb"
+DISK="/dev/nvme1n1"
 # Create MBR partition table and extended partition across disk
 parted -s $DISK -- mklabel msdos mkpart extended 1m -1m
 
